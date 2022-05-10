@@ -32,7 +32,7 @@ func main() {
 	if (err != nil) || (a < 1) {
 		fmt.Println("Необходимо ввести натуральное число!", err)
 	} else {
-		jobs := make(chan int, 100)
+		jobs := make(chan int)
 		go receive(jobs)
 		go worker(jobs)
 	}
