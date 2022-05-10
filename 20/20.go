@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	s:="snow dog sun"
+	s:="snow dog golang sun"
 	fmt.Println(s)
 	v:=strings.Split(s, " ")//берем слайс из слов строки 
 	for i, j := 0, len(v)-1; i < j; i, j = i+1, j-1 {
@@ -14,4 +14,5 @@ func main() {
     }
 	s=strings.Join(v," ")//снова объединяем в строку
 	fmt.Println(s)
+
 }

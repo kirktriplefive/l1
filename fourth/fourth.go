@@ -12,10 +12,11 @@ import (
 
 func receive(ingest chan int){
 	i := 0
-    for {
-        ingest <-i
-        i++
-        time.Sleep(time.Millisecond * 100)
+    for { 
+			ingest <-i
+			i++
+			time.Sleep(time.Millisecond * 100)
+        
     }
 }
 

@@ -6,7 +6,7 @@ import (
 )
 
 func f(i int) {
-    fmt.Println(i*i)//функция для вывода квадратов
+    fmt.Println(i*i, time.Now())//функция для вывода квадратов
 }
 
 
